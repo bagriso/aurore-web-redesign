@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Aurore Labs — Better collections, on the systems you already run",
   description:
-    "Seventeen purpose-built intelligence and automation products for debt sellers, buyers, collection agencies, and law firms.",
+    "Seventeen purpose-built intelligence and automation products for debt sellers, buyers, and collection agencies.",
 };
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
 
           <p className="lede" style={{ color: "rgba(245,241,233,0.78)", maxWidth: "62ch", marginTop: 28, fontSize: 19 }}>
             Seventeen purpose-built intelligence and automation products for debt sellers,
-            buyers, collection agencies, and law firms. We integrate alongside the systems you already operate — and quietly turn every account into one
+            buyers, and collection agencies. We integrate alongside the systems you already operate — and quietly turn every account into one
             that gets a better next action, a cleaner audit trail, and an answer the first time.
           </p>
 
@@ -43,7 +43,6 @@ export default function Home() {
             <p className="eyebrow" style={{ color: "rgba(245,241,233,0.55)", marginBottom: 14 }}>Tell us who you are</p>
             <div className="seg-switch" style={{ background: "rgba(255,255,255,0.04)", borderColor: "var(--rev-line)" }}>
               <Link href="/for-agencies" style={{ color: "rgba(245,241,233,0.82)" }}>Collection agency</Link>
-              <Link href="/for-law-firms" style={{ color: "rgba(245,241,233,0.82)" }}>Collection law firm</Link>
               <Link href="/for-buyers" style={{ color: "rgba(245,241,233,0.82)" }}>Debt buyer</Link>
               <Link href="/for-sellers" style={{ color: "rgba(245,241,233,0.82)" }}>Debt seller / creditor</Link>
             </div>
@@ -153,19 +152,17 @@ export default function Home() {
           </h2>
           <p className="lede" style={{ maxWidth: "64ch", marginTop: 18 }}>
             Other platforms pick a corner. Aurore covers the full path of a portfolio —
-            from the moment a creditor decides to sell, through marketplace pricing,
-            through the buyer&apos;s bid, through agency and law-firm collection, all the way
-            to the last garnishment cleared. One data model. Seventeen products.
+            from the moment a creditor decides to sell, through the buyer&apos;s bid, through
+            collection and enforcement, all the way to the last garnishment cleared.
+            One data model. Seventeen products.
           </p>
 
           <div style={{ marginTop: 48 }}>
             <div className="ecosystem">
               {[
                 { n: "01", name: "Debt sellers", sub: "Banks · medical · auto · telecom · landlords", count: 2 },
-                { n: "02", name: "Marketplaces", sub: "DebtX · Debt Exchange · brokers", count: 2 },
-                { n: "03", name: "Debt buyers", sub: "National · regional · specialty", count: 3 },
-                { n: "04", name: "Collection agencies", sub: "Phone · mail · digital channels", count: 8 },
-                { n: "05", name: "Collection law firms", sub: "Litigation · judgments · enforcement", count: 8 },
+                { n: "02", name: "Debt buyers", sub: "National · regional · specialty", count: 3 },
+                { n: "03", name: "Collection agencies", sub: "Phone · mail · digital channels", count: 12 },
               ].map((node) => (
                 <div key={node.n} className="eco-node">
                   <span className="sub">{node.n}</span>
@@ -177,14 +174,13 @@ export default function Home() {
               ))}
             </div>
             <div className="eco-arrows">
-              <span>↓ sells</span><span>↓ lists &amp; prices</span><span>↓ buys</span><span>↓ collects</span><span>↓ litigates</span>
+              <span>↓ sells</span><span>↓ buys</span><span>↓ collects &amp; enforces</span>
             </div>
           </div>
 
           <div style={{ marginTop: 36, display: "flex", gap: 10, flexWrap: "wrap" }}>
             <Link href="/solutions" className="btn btn-secondary btn-sm">See all 17 solutions →</Link>
             <Link href="/for-agencies" className="btn btn-ghost btn-sm">Agency operators →</Link>
-            <Link href="/for-law-firms" className="btn btn-ghost btn-sm">Law firm operators →</Link>
           </div>
         </div>
       </section>
@@ -193,32 +189,31 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="section-mark"><span className="num">§ 03</span><span className="label">A customer story</span></div>
-          <h2 className="display h-lg" style={{ marginTop: 18, maxWidth: "24ch" }}>
-            83.4% of inbound calls were going unanswered.{" "}
-            <em style={{ fontStyle: "italic", color: "var(--teal)" }}>Motivated debtors.</em>
+          <h2 className="display h-lg" style={{ marginTop: 18, maxWidth: "26ch" }}>
+            11,500 manual hours eliminated.{" "}
+            <em style={{ fontStyle: "italic", color: "var(--teal)" }}>Headcount stopped capping growth.</em>
           </h2>
 
           <div style={{ marginTop: 48, display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: 32, alignItems: "start" }}>
             <div className="card card-pad-lg">
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18 }}>
                 <span className="pill pill-accent">Active engagement</span>
-                <span className="pill">Creditors-rights law firm</span>
-                <span className="pill">~7 collectors · 4,170 calls / Q</span>
+                <span className="pill">Small to mid-size collection agency</span>
+                <span className="pill">Pacific Northwest · 10 months in</span>
               </div>
 
               <p className="quote">
-                <span className="quote-mark">&ldquo;</span>Of every 100 inbound calls, only 17 were being
-                answered. The two worst windows of the day — noon and 4 PM — were running at 7%
-                and 2%. Those weren&apos;t dead leads. Those were debtors picking up the phone, on
-                their own initiative, ready to resolve.
+                <span className="quote-mark">&ldquo;</span>Every time they won a new client or took on more paper, they had to hire.
+                The math was linear — more cases meant more people to process them.
+                After ten months on Aurore, the math is no longer linear.
               </p>
 
               <div style={{ marginTop: 36, display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 1, background: "var(--line)", borderRadius: "var(--radius)", overflow: "hidden", border: "1px solid var(--line)" }}>
                 {[
-                  { label: "Inbound attempts", val: "4,170", sub: "Q4 2025", color: "var(--ink)" },
-                  { label: "Answered", val: "16.6%", sub: "vs 30%+ industry", color: "var(--rose)" },
-                  { label: "Best agent", val: "59.2%", sub: "Single collector, same shift", color: "var(--teal)" },
-                  { label: "EOD answer rate", val: "2%", sub: "4 PM coverage collapse", color: "var(--rose)" },
+                  { label: "Hours eliminated", val: "11,500", sub: "per year", color: "var(--teal)" },
+                  { label: "Cost savings", val: "$300K", sub: "per year", color: "var(--teal)" },
+                  { label: "FTE equivalent", val: "~6.0", sub: "absorbed by Aurore", color: "var(--ink)" },
+                  { label: "Caseload growth", val: "40–50%", sub: "no new hires", color: "var(--teal)" },
                 ].map((s) => (
                   <div key={s.label} style={{ background: "var(--paper)", padding: 18 }}>
                     <div className="mono" style={{ fontSize: 11, color: "var(--ink-muted)", letterSpacing: "0.14em", textTransform: "uppercase" }}>{s.label}</div>
@@ -229,40 +224,42 @@ export default function Home() {
               </div>
 
               <p className="body" style={{ marginTop: 24 }}>
-                Aurore&apos;s Resource Allocation + Omnichannel Routing engines surfaced the
-                structural gap, sized the lost recovery, and produced a coverage model
-                the principal could put on a single page in front of the partners.
+                We mapped every manual touchpoint in their case lifecycle and automated
+                the rules-based ones. The team can now absorb 40–50% more caseload
+                without adding headcount.
               </p>
 
-              <div style={{ marginTop: 28, display: "flex", gap: 10, flexWrap: "wrap" }}>
-                <Link href="/customers" className="btn btn-primary btn-sm">Read the case →</Link>
-                <Link href="/for-law-firms" className="btn btn-ghost btn-sm">Built for law firms →</Link>
+              <div style={{ marginTop: 28 }}>
+                <Link href="/customers" className="btn btn-primary btn-sm">Read the full case →</Link>
               </div>
             </div>
 
             <div className="flow">
               <div className="card card-pad">
-                <p className="eyebrow accent">What this engagement says</p>
-                <p className="body" style={{ marginTop: 14 }}>
-                  The most expensive thing in a collections operation isn&apos;t software.
-                  It&apos;s the moment a debtor calls in, intends to resolve, and the call
-                  isn&apos;t answered. That moment doesn&apos;t come back.
-                </p>
+                <p className="eyebrow accent">Before / after per case</p>
+                <div style={{ marginTop: 14, display: "flex", flexDirection: "column", gap: 10 }}>
+                  {[
+                    { step: "Case intake & data entry", before: "18 min", after: "2 min" },
+                    { step: "Skip trace & augmentation", before: "12 min", after: "1 min" },
+                    { step: "Compliance doc generation", before: "9 min", after: "0 min" },
+                    { step: "Client reporting", before: "14 min", after: "1 min" },
+                  ].map((r) => (
+                    <div key={r.step} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", borderBottom: "1px solid var(--line-soft)", paddingBottom: 8 }}>
+                      <span className="body-sm" style={{ color: "var(--ink-2)" }}>{r.step}</span>
+                      <span className="mono" style={{ fontSize: 12, color: "var(--teal)", flexShrink: 0, marginLeft: 12 }}>{r.before} → {r.after}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
               <div className="card card-pad card-teal">
                 <p className="eyebrow accent">Aurore engines involved</p>
                 <ul className="body" style={{ marginTop: 14, paddingLeft: 18, lineHeight: 1.8 }}>
-                  <li>Resource Allocation Intelligence</li>
-                  <li>Omnichannel Routing Intelligence</li>
-                  <li>Behavioral Segmentation Intelligence</li>
-                  <li>Yield (Next Action) Intelligence</li>
+                  <li>Case Intake Automation</li>
+                  <li>Data Analysis &amp; Augmentation</li>
+                  <li>Small Claims &amp; Civil Case Prep</li>
+                  <li>Compliance Document Management</li>
+                  <li>Client Reporting Portal</li>
                 </ul>
-              </div>
-              <div className="card card-pad">
-                <p className="eyebrow">More customers</p>
-                <p className="body" style={{ marginTop: 10 }}>Specialty collection agency · IPACS migration, EPIC integration, FR 10–24.</p>
-                <p className="body" style={{ marginTop: 10 }}>Small to mid-size PNW collections firm · 11,500 hours of manual work eliminated.</p>
-                <Link href="/customers" className="mono" style={{ display: "inline-block", marginTop: 14, fontSize: 12, color: "var(--teal)", letterSpacing: "0.04em" }}>All customers →</Link>
               </div>
             </div>
           </div>
@@ -284,7 +281,7 @@ export default function Home() {
           {[
             {
               stage: "Stage 01 · Portfolio decisions",
-              sub: "For sellers, marketplaces, and buyers",
+              sub: "For sellers and buyers",
               cols: "repeat(2,1fr)",
               products: [
                 { n: "01 · For sellers", name: "Seller Portfolio Intelligence", desc: "Analyzes and scores portfolios prior to sale. Expected recovery, account characteristics, optimal pricing strategy." },
@@ -293,7 +290,7 @@ export default function Home() {
             },
             {
               stage: "Stage 02 · Intake & enrichment",
-              sub: "For agencies and law firms",
+              sub: "For agencies",
               cols: "repeat(3,1fr)",
               products: [
                 { n: "03", name: "Case Intake Automation", desc: "Ingests, validates and enriches incoming case data from clients. Faster time-to-work, fewer entry errors." },
@@ -325,7 +322,7 @@ export default function Home() {
             },
             {
               stage: "Stage 05 · Litigation & recovery",
-              sub: "For collection law firms",
+              sub: "Litigation & recovery",
               cols: "repeat(3,1fr)",
               products: [
                 { n: "13", name: "Small Claims Preparation", desc: "Court filings, exhibits, supporting documentation for small claims proceedings. Less attorney time per matter." },
@@ -463,10 +460,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 14 }}>
               {[
-                { seg: "For agencies", tagline: "Lift answer rates & cut $/seat.", href: "/for-agencies" },
-                { seg: "For law firms", tagline: "More judgments per attorney.", href: "/for-law-firms" },
+                { seg: "For agencies", tagline: "Lift liquidation. Cut $/seat.", href: "/for-agencies" },
                 { seg: "For buyers", tagline: "Price portfolios with conviction.", href: "/for-buyers" },
                 { seg: "For sellers", tagline: "Sell at the price your data deserves.", href: "/for-sellers" },
               ].map((s) => (

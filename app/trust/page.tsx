@@ -72,7 +72,6 @@ export default function TrustPage() {
             We work inside operations that handle sensitive consumer financial data.
             The compliance officer, the IT security lead, and the managing partner all
             need to be comfortable before we touch production. This page is for them.
-            If you need the full security package, we&apos;ll send it under NDA.
           </p>
         </div>
       </section>
