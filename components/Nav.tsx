@@ -20,8 +20,8 @@ export default function Nav() {
     <header className="site-nav">
       <div className="container inner">
         <Link href="/" className="brand">
-          <span className="mark">A</span>
-          <span className="wordmark">Aurore</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-dark.svg" alt="Aurore" style={{ height: 34, width: "auto" }} />
         </Link>
         <nav className="primary">
           {navLinks.map((l) => (

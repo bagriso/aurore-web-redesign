@@ -7,41 +7,9 @@ export default function Footer() {
       <div className="container">
         <div className="cols">
           <div>
-            <Link
-              href="/"
-              className="brand"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 10,
-                color: "var(--ink-rev)",
-              }}
-            >
-              <span
-                style={{
-                  width: 32,
-                  height: 32,
-                  borderRadius: 999,
-                  background: "var(--ink-rev)",
-                  color: "var(--ink)",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontFamily: "var(--font-display)",
-                  fontSize: 19,
-                }}
-              >
-                A
-              </span>
-              <span
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: 26,
-                  letterSpacing: "-0.01em",
-                }}
-              >
-                Aurore
-              </span>
+            <Link href="/" className="brand">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-white.svg" alt="Aurore" style={{ height: 34, width: "auto" }} />
             </Link>
             <p
               style={{
