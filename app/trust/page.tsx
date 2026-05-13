@@ -76,79 +76,64 @@ export default function TrustPage() {
         </div>
       </section>
 
-      {/* TWO COLUMNS */}
+      {/* SINGLE CARD */}
       <section className="section">
         <div className="container">
-          <div className="grid-2" style={{ gap: 28, alignItems: "start" }}>
-
-            {/* § 01 Security */}
-            <div className="card card-pad-lg flow-lg">
-              <p className="eyebrow accent">Security</p>
-              <div className="flow-lg">
-                <TrustRow
-                  label="Hosting"
-                  pill="Active"
-                  pillTone="accent"
-                  note="US-only AWS regions. No data processed or stored outside the United States."
-                />
-                <TrustRow
-                  label="Encryption"
-                  pill="Active"
-                  pillTone="accent"
-                  note="AES-256 at rest, TLS 1.3 in transit, customer-managed KMS keys available."
-                />
-                <TrustRow
-                  label="BAA (HIPAA)"
-                  pill="Available"
-                  pillTone="accent"
-                  note="Business Associate Agreement available for medical-debt engagements."
-                />
-                <TrustRow
-                  label="PII handling"
-                  pill="Enforced"
-                  pillTone="accent"
-                  note="Field-level access controls. PII never written to logs. Tokenization available."
-                />
-              </div>
-            </div>
-
-            {/* § 02 Operational */}
-            <div className="card card-pad-lg flow-lg">
-              <p className="eyebrow accent">Operations</p>
-              <div className="flow-lg">
-                <TrustRow
-                  label="Uptime"
-                  pill="99.9%"
-                  pillTone="accent"
-                  note="On production environments. Measured monthly across all customer deployments."
-                />
-                <TrustRow
-                  label="Response SLA"
-                  pill="Platinum"
-                  pillTone="accent"
-                  note="For Platinum-tier clients and critical P1 incidents: acknowledged within 30 minutes, 24/7."
-                />
-                <TrustRow
-                  label="Backups"
-                  pill="Active"
-                  pillTone="accent"
-                  note="Daily encrypted backups, cross-region replication, restoration tested quarterly."
-                />
-                <TrustRow
-                  label="Change log"
-                  pill="Active"
-                  pillTone="accent"
-                  note="All production changes logged. Monthly release notes distributed to clients."
-                />
-                <TrustRow
-                  label="Audit evidence export"
-                  pill="Built-in"
-                  pillTone="accent"
-                  note="One-click examiner-ready evidence bundle. Covers CFPB, state AG, and client audits."
-                />
-              </div>
-            </div>
-
+          <div className="card card-pad-lg flow-lg" style={{ maxWidth: 720 }}>
+            <TrustRow
+              label="Hosting"
+              pill="Active"
+              pillTone="accent"
+              note="US-only AWS regions. No data processed or stored outside the United States."
+            />
+            <TrustRow
+              label="Encryption"
+              pill="Active"
+              pillTone="accent"
+              note="AES-256 at rest, TLS 1.3 in transit, customer-managed KMS keys available."
+            />
+            <TrustRow
+              label="BAA (HIPAA)"
+              pill="Available"
+              pillTone="accent"
+              note="Business Associate Agreement available for medical-debt engagements."
+            />
+            <TrustRow
+              label="PII handling"
+              pill="Enforced"
+              pillTone="accent"
+              note="Field-level access controls. PII never leaves your environment."
+            />
+            <TrustRow
+              label="Uptime"
+              pill="99.9%"
+              pillTone="accent"
+              note="On production environments. Measured monthly across all customer deployments."
+            />
+            <TrustRow
+              label="Response SLA"
+              pill="Platinum"
+              pillTone="accent"
+              note="For Platinum-tier clients and critical P1 incidents: acknowledged within 30 minutes, 24/7."
+            />
+            <TrustRow
+              label="Backups"
+              pill="Active"
+              pillTone="accent"
+              note="Daily encrypted backups, cross-region replication, restoration tested quarterly."
+            />
+            <TrustRow
+              label="Change log"
+              pill="Active"
+              pillTone="accent"
+              note="All production changes logged. Monthly release notes distributed to clients."
+            />
+            <TrustRow
+              label="Audit evidence export"
+              pill="Built-in"
+              pillTone="accent"
+              note="One-click examiner-ready evidence bundle. Covers CFPB, state AG, and client audits."
+            />
           </div>
         </div>
       </section>

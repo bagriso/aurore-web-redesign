@@ -16,7 +16,6 @@ export default function ForSellersPage() {
           <div style={{ marginBottom: "24px" }}>
             <div className="seg-switch">
               <Link href="/for-agencies">Collection agency</Link>
-              <Link href="/for-law-firms">Collection law firm</Link>
               <Link href="/for-buyers">Debt buyer</Link>
               <Link href="/for-sellers" className="is-active">
                 Debt seller / creditor

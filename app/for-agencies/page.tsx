@@ -18,7 +18,6 @@ export default function ForAgenciesPage() {
               <Link href="/for-agencies" className="is-active">
                 Collection agency
               </Link>
-              <Link href="/for-law-firms">Collection law firm</Link>
               <Link href="/for-buyers">Debt buyer</Link>
               <Link href="/for-sellers">Debt seller / creditor</Link>
             </div>

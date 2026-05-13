@@ -55,7 +55,7 @@ export default function Footer() {
             <h4>For your operation</h4>
             <ul>
               <li><Link href="/for-agencies">Collection agencies</Link></li>
-              <li><Link href="/for-law-firms">Collection law firms</Link></li>
+
               <li><Link href="/for-buyers">Debt buyers</Link></li>
               <li><Link href="/for-sellers">Debt sellers</Link></li>
             </ul>
