@@ -129,107 +129,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* § 03 TEAM */}
-      <section className="section">
-        <div className="container">
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1.6fr", gap: 80, alignItems: "start" }}>
-            <div>
-              <div className="section-mark" style={{ marginBottom: 20 }}>
-                <span className="num">03</span>
-                <span className="label">Team</span>
-              </div>
-              <h2 className="display h-md" style={{ marginBottom: 20 }}>
-                Small team. Deep domain.
-              </h2>
-              <p className="body-lg">
-                We are a small company by design. Every person on the team has worked inside
-                a collections operation, a creditors-rights firm, or a debt portfolio — not
-                just adjacent to one. We stay small because it lets us stay close to the
-                problem.
-              </p>
-            </div>
-
-            <div>
-              {/* 3x2 grid of team placeholders */}
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16 }}>
-                {[
-                  { role: "Founder / CEO", name: "Name placeholder" },
-                  { role: "Founder / CTO", name: "Name placeholder" },
-                  { role: "Head of Engineering", name: "Name placeholder" },
-                  { role: "Head of Domain", name: "Name placeholder" },
-                  { role: "Compliance Lead", name: "Name placeholder" },
-                  { role: "Forward-deployed eng", name: "Name placeholder" },
-                ].map(({ role, name }) => (
-                  <div key={role} className="card card-pad flow" style={{ padding: 20 }}>
-                    {/* Square placeholder image */}
-                    <div
-                      style={{
-                        width: "100%",
-                        aspectRatio: "1",
-                        background: "var(--paper-2)",
-                        borderRadius: "var(--radius)",
-                        border: "1px solid var(--line-soft)",
-                        marginBottom: 12,
-                      }}
-                    />
-                    <p className="body" style={{ fontWeight: 600, marginBottom: 2 }}>{name}</p>
-                    <p className="body-sm muted">{role}</p>
-                    <p className="body-sm" style={{ color: "var(--ink-dim)", fontStyle: "italic" }}>
-                      Background placeholder
-                    </p>
-                  </div>
-                ))}
-              </div>
-              <p className="body-sm muted" style={{ marginTop: 16 }}>
-                Replace placeholders with real bios and headshots before launch.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* § 04 WHERE WE WORK */}
-      <section className="section bg-paper-2">
-        <div className="container">
-          <div className="section-mark" style={{ marginBottom: 20 }}>
-            <span className="num">04</span>
-            <span className="label">Where we work</span>
-          </div>
-          <h2 className="display h-lg" style={{ maxWidth: "22ch", marginBottom: 48 }}>
-            Two cities. One focus.
-          </h2>
-          <div className="grid-2" style={{ gap: 24 }}>
-
-            <div className="card card-pad-lg flow-lg">
-              <div>
-                <p className="eyebrow" style={{ marginBottom: 8 }}>Fairfield, California</p>
-                <h3 className="display h-sm">North American HQ</h3>
-              </div>
-              <p className="body">
-                Our commercial, client-facing, and forward-deployed engineering teams are
-                based in Fairfield, CA. Client engagements across the US are typically run
-                from here, with on-site presence as needed.
-              </p>
-              <span className="pill">North American HQ</span>
-            </div>
-
-            <div className="card card-pad-lg flow-lg">
-              <div>
-                <p className="eyebrow" style={{ marginBottom: 8 }}>Santiago, Chile</p>
-                <h3 className="display h-sm">Engineering hub</h3>
-              </div>
-              <p className="body">
-                Our core engineering team is based in Santiago. Platform development,
-                SOR integrations, and product infrastructure are built here. The timezone
-                overlap with US Eastern gives us morning coverage on both ends.
-              </p>
-              <span className="pill">Engineering hub</span>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="section bg-ink">
         <div className="container" style={{ textAlign: "center" }}>
@@ -241,8 +140,8 @@ export default function AboutPage() {
           </p>
           <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: 12 }}>
             <Link href="/contact" className="btn btn-rev-primary btn-lg">Talk to us</Link>
-            <a href="mailto:careers@aurorelabs.ai" className="btn btn-rev-ghost btn-lg">
-              careers@aurorelabs.ai
+            <a href="https://aurore-labs.notion.site/careers-latam" target="_blank" rel="noopener noreferrer" className="btn btn-rev-ghost btn-lg">
+              See open roles →
             </a>
           </div>
         </div>

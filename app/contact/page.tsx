@@ -120,25 +120,6 @@ export default function ContactPage() {
                       <option>Collection law firm</option>
                       <option>Debt buyer</option>
                       <option>Debt seller / creditor</option>
-                      <option>Marketplace / broker</option>
-                      <option>Other</option>
-                    </select>
-                  </label>
-
-                  <label className="field">
-                    <span>Current system of record</span>
-                    <select name="sor" value={formData.sor} onChange={e => setFormData(p => ({ ...p, sor: e.target.value }))}>
-                      <option value="">Select if applicable…</option>
-                      <option>JST CollectMax</option>
-                      <option>IPACS</option>
-                      <option>Latitude (Finvi)</option>
-                      <option>Artiva (Finvi)</option>
-                      <option>CUBS</option>
-                      <option>Quantrax RMEx</option>
-                      <option>Columbia Ultimate</option>
-                      <option>Collect!</option>
-                      <option>Simplicity</option>
-                      <option>In-house / custom</option>
                       <option>Other</option>
                     </select>
                   </label>

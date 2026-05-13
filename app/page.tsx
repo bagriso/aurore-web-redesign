@@ -30,8 +30,7 @@ export default function Home() {
 
           <p className="lede" style={{ color: "rgba(245,241,233,0.78)", maxWidth: "62ch", marginTop: 28, fontSize: 19 }}>
             Seventeen purpose-built intelligence and automation products for debt sellers,
-            buyers, collection agencies, and law firms. We integrate alongside JST CollectMax,
-            IPACS and the systems you already operate — and quietly turn every account into one
+            buyers, collection agencies, and law firms. We integrate alongside the systems you already operate — and quietly turn every account into one
             that gets a better next action, a cleaner audit trail, and an answer the first time.
           </p>
 
@@ -55,9 +54,9 @@ export default function Home() {
         <div className="container" style={{ position: "relative", paddingBottom: 0 }}>
           <div className="statband" style={{ marginBottom: -64, boxShadow: "var(--shadow-lg)" }}>
             <div className="stat">
-              <div className="unit">Inbound answer rate</div>
-              <div className="num">16.6 → 30%+</div>
-              <div className="label">Target lift in a 4,170-call quarter at a regional creditors-rights law firm.</div>
+              <div className="unit">Per-case manual work</div>
+              <div className="num">~95%</div>
+              <div className="label">Eliminated — from 53 minutes to 4 minutes per account. Mid-size PNW collection agency.</div>
             </div>
             <div className="stat">
               <div className="unit">Manual work eliminated</div>
@@ -79,22 +78,6 @@ export default function Home() {
       </section>
 
       <div style={{ height: 80 }} />
-
-      {/* Trust strip */}
-      <section>
-        <div className="container">
-          <div className="trust-strip">
-            <span className="ts-label">Built for the systems you run</span>
-            <span className="ts-item">JST CollectMax</span>
-            <span className="ts-item">IPACS</span>
-            <span className="ts-item">YGC network</span>
-            <span className="ts-item">SmartData SQL</span>
-            <span className="ts-item">MaxUpdater</span>
-            <span className="ts-item">Tyler eFile · OECI</span>
-            <span className="ts-item">QuickBooks</span>
-          </div>
-        </div>
-      </section>
 
       {/* § 01 — What Aurore does */}
       <section className="section">
@@ -128,7 +111,7 @@ export default function Home() {
                 <span className="pill pill-amber">Spend less</span>
                 <span className="mono dim" style={{ fontSize: 11 }}>02</span>
               </div>
-              <h3 className="display h-sm">Stop paying people to copy documents.</h3>
+              <h3 className="display h-sm">Stop paying people to move information between systems.</h3>
               <p className="body" style={{ marginTop: 14 }}>
                 Intake, court filings, garnishment writs, EOM payment merges, document
                 retrieval — automation that eliminates the manual middle of the operation.
