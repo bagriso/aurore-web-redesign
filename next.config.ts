@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async redirects() {
+    return [
+      {
+        source: "/careers",
+        destination: "https://aurore-labs.notion.site/careers-latam",
+        permanent: false,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
