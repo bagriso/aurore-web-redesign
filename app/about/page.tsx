@@ -202,12 +202,12 @@ export default function AboutPage() {
 
             <div className="card card-pad-lg flow-lg">
               <div>
-                <p className="eyebrow" style={{ marginBottom: 8 }}>Boston, MA</p>
+                <p className="eyebrow" style={{ marginBottom: 8 }}>Fairfield, California</p>
                 <h3 className="display h-sm">North American HQ</h3>
               </div>
               <p className="body">
                 Our commercial, client-facing, and forward-deployed engineering teams are
-                based in Boston. Client engagements in the Eastern US are typically run
+                based in Fairfield, CA. Client engagements across the US are typically run
                 from here, with on-site presence as needed.
               </p>
               <span className="pill">North American HQ</span>

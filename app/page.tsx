@@ -277,7 +277,7 @@ export default function Home() {
               </div>
               <div className="card card-pad">
                 <p className="eyebrow">More customers</p>
-                <p className="body" style={{ marginTop: 10 }}>Western Mercantile Agency · IPACS migration, EPIC integration, FR 10–24.</p>
+                <p className="body" style={{ marginTop: 10 }}>Specialty collection agency · IPACS migration, EPIC integration, FR 10–24.</p>
                 <p className="body" style={{ marginTop: 10 }}>Mid-size PNW collections firm · 11,500 hours of manual work eliminated.</p>
                 <Link href="/customers" className="mono" style={{ display: "inline-block", marginTop: 14, fontSize: 12, color: "var(--teal)", letterSpacing: "0.04em" }}>All customers →</Link>
               </div>

@@ -73,7 +73,7 @@ export default function Footer() {
         </div>
 
         <div className="bottom">
-          <span>© {year} Aurore Labs · Boston · Santiago</span>
+          <span>© {year} Aurore Labs · Fairfield, CA · Santiago</span>
           <span>Aurorelabs.ai</span>
           <span>Built for operators</span>
         </div>

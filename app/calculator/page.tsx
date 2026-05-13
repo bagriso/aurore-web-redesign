@@ -54,12 +54,12 @@ export default function CalculatorPage() {
   const r = compute(state);
 
   const sliders: { id: keyof State; label: string; sub: string; min: number; max: number; step: number; fmt: (n: number) => string }[] = [
-    { id: "seats",            label: "Operations seats / collectors",  sub: "Front-line FTEs in the workflow",           min: 3, max: 500, step: 1,      fmt: n => n.toLocaleString() },
-    { id: "seatCost",         label: "Fully-loaded cost per seat / yr", sub: "Salary + benefits + overhead",             min: 35000, max: 160000, step: 2500, fmt: fmtUSD },
     { id: "casesPerYear",     label: "Cases / accounts per year",      sub: "Volume across the workflow",               min: 500, max: 100000, step: 500,  fmt: n => n.toLocaleString() },
     { id: "manualMinPerCase", label: "Manual minutes per case (today)", sub: "Intake + documents + admin overhead",      min: 5, max: 180, step: 1,        fmt: n => n + " min" },
+    { id: "seatCost",         label: "Fully-loaded cost per seat / yr", sub: "Salary + benefits + overhead",             min: 35000, max: 160000, step: 2500, fmt: fmtUSD },
     { id: "liquidationRate",  label: "Liquidation / net-back rate (%)", sub: "Recovery as % of face value",             min: 0, max: 40, step: 1,          fmt: n => n + "%" },
     { id: "portfolioVolume",  label: "Annual portfolio volume placed",  sub: "Total face value run through the workflow", min: 500000, max: 500000000, step: 500000, fmt: fmtUSD },
+    { id: "seats",            label: "Operations seats / collectors",  sub: "Front-line FTEs — drives capacity headroom calculation", min: 3, max: 500, step: 1, fmt: n => n.toLocaleString() },
   ];
 
   return (
