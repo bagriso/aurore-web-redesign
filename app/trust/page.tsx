@@ -102,7 +102,7 @@ export default function TrustPage() {
               label="PII handling"
               pill="Enforced"
               pillTone="accent"
-              note="Field-level access controls. PII never leaves your environment."
+              note="Field-level access controls. PII never written to logs. Tokenization available."
             />
             <TrustRow
               label="Uptime"
