@@ -95,6 +95,8 @@ a:hover { color: var(--teal-bright); }
 .btn-ghost:hover { border-color: var(--ink); color: var(--ink); }
 .btn-rev-primary { background: var(--ink-rev); color: var(--ink); }
 .btn-rev-primary:hover { background: var(--teal-bright); color: var(--ink-rev); }
+a.btn-rev-primary { color: var(--ink); }
+a.btn-rev-primary:hover { color: var(--ink-rev); }
 .btn-rev-ghost { background: transparent; color: var(--ink-rev); border-color: var(--rev-line); }
 .btn-rev-ghost:hover { border-color: var(--ink-rev); }
 .btn-sm { padding: 8px 14px; font-size: 13px; }
