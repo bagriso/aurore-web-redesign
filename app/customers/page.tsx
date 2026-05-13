@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Customer Story — Aurore Labs",
   description:
-    "How a mid-size Pacific Northwest collection agency eliminated 11,500 hours of manual work per year and absorbed 40–50% more caseload without hiring.",
+    "How a small to mid-size Pacific Northwest collection agency eliminated 11,500 hours of manual work per year and absorbed 40–50% more caseload without hiring.",
 };
 
 export default function CustomersPage() {
@@ -19,7 +19,7 @@ export default function CustomersPage() {
             11,500 hours eliminated. Headcount stopped capping growth.
           </h1>
           <p className="lede" style={{ maxWidth: "62ch" }}>
-            A mid-size Pacific Northwest collection agency. Ten months on Aurore.
+            A small to mid-size Pacific Northwest collection agency. Ten months on Aurore.
             The math is no longer linear.
           </p>
         </div>
@@ -30,7 +30,7 @@ export default function CustomersPage() {
         <div className="container">
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 32 }}>
             <span className="pill pill-accent">Case study</span>
-            <span className="pill">Mid-size collection agency</span>
+            <span className="pill">Small to mid-size collection agency</span>
             <span className="pill">Pacific Northwest</span>
             <span className="pill">10 months in</span>
           </div>
@@ -42,7 +42,7 @@ export default function CustomersPage() {
             {/* Left column */}
             <div className="flow-lg">
               <p className="body-lg">
-                A mid-size Pacific Northwest collection agency came to Aurore with a ceiling problem:
+                A small to mid-size Pacific Northwest collection agency came to Aurore with a ceiling problem:
                 every time they won a new client or took on more paper, they had to hire. The math
                 was linear — more cases meant more people to process them. After ten months on Aurore,
                 the math is no longer linear.

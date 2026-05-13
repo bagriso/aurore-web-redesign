@@ -56,12 +56,12 @@ export default function Home() {
             <div className="stat">
               <div className="unit">Per-case manual work</div>
               <div className="num">~95%</div>
-              <div className="label">Eliminated — from 53 minutes to 4 minutes per account. Mid-size PNW collection agency.</div>
+              <div className="label">Eliminated — from 53 minutes to 4 minutes per account. Small to mid-size PNW collection agency.</div>
             </div>
             <div className="stat">
               <div className="unit">Manual work eliminated</div>
               <div className="num">11,500<span style={{ fontSize: "0.45em", color: "var(--ink-muted)", marginLeft: 6 }}>hrs/yr</span></div>
-              <div className="label">Mid-size Pacific Northwest collections firm · ten months of automation.</div>
+              <div className="label">Small to mid-size Pacific Northwest collections firm · ten months of automation.</div>
             </div>
             <div className="stat">
               <div className="unit">Operating cost out</div>
@@ -261,7 +261,7 @@ export default function Home() {
               <div className="card card-pad">
                 <p className="eyebrow">More customers</p>
                 <p className="body" style={{ marginTop: 10 }}>Specialty collection agency · IPACS migration, EPIC integration, FR 10–24.</p>
-                <p className="body" style={{ marginTop: 10 }}>Mid-size PNW collections firm · 11,500 hours of manual work eliminated.</p>
+                <p className="body" style={{ marginTop: 10 }}>Small to mid-size PNW collections firm · 11,500 hours of manual work eliminated.</p>
                 <Link href="/customers" className="mono" style={{ display: "inline-block", marginTop: 14, fontSize: 12, color: "var(--teal)", letterSpacing: "0.04em" }}>All customers →</Link>
               </div>
             </div>
