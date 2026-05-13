@@ -68,7 +68,7 @@ export default function Footer() {
               <li><Link href="/customers">Customers</Link></li>
               <li><Link href="/insights">Insights</Link></li>
               <li><Link href="/contact">Contact</Link></li>
-              <li><Link href="/careers">Careers</Link></li>
+              <li><a href="https://aurore-labs.notion.site/careers-latam" target="_blank" rel="noopener noreferrer">Careers</a></li>
             </ul>
           </div>
         </div>
