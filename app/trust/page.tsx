@@ -82,14 +82,9 @@ export default function TrustPage() {
         <div className="container">
           <div className="grid-2" style={{ gap: 28, alignItems: "start" }}>
 
-            {/* § 01 Security posture */}
+            {/* § 01 Security */}
             <div className="card card-pad-lg flow-lg">
-              <div>
-                <div className="section-mark" style={{ marginBottom: 14 }}>
-                  <span className="num">01</span>
-                  <span className="label">Security posture</span>
-                </div>
-              </div>
+              <p className="eyebrow accent">Security</p>
               <div className="flow-lg">
                 <TrustRow
                   label="Hosting"
@@ -118,14 +113,9 @@ export default function TrustPage() {
               </div>
             </div>
 
-            {/* § 02 Operational posture */}
+            {/* § 02 Operational */}
             <div className="card card-pad-lg flow-lg">
-              <div>
-                <div className="section-mark" style={{ marginBottom: 14 }}>
-                  <span className="num">02</span>
-                  <span className="label">Operational posture</span>
-                </div>
-              </div>
+              <p className="eyebrow accent">Operations</p>
               <div className="flow-lg">
                 <TrustRow
                   label="Uptime"
@@ -170,17 +160,15 @@ export default function TrustPage() {
           <div className="card bg-paper-2 card-pad-lg" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 28, border: "1px solid var(--line)" }}>
             <div style={{ maxWidth: "52ch" }}>
               <h2 className="display h-sm" style={{ marginBottom: 12 }}>
-                Need the long version?
+                Want to know more?
               </h2>
               <p className="body-lg">
-                We&apos;ll send the full security package under NDA — GLBA controls documentation,
-                BAA, and detailed incident response procedures. Most security reviews are
-                completed within 5 business days.
+                Thirty minutes with our team is enough to walk through your specific
+                security and compliance questions — no deck, no sales pitch.
               </p>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 10, flexShrink: 0 }}>
-              <Link href="/contact" className="btn btn-primary btn-lg">Request the package</Link>
-              <Link href="/contact" className="btn btn-ghost btn-lg">Book a walkthrough instead</Link>
+              <Link href="/contact" className="btn btn-primary btn-lg">Book a walkthrough</Link>
             </div>
           </div>
         </div>
