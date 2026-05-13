@@ -8,7 +8,6 @@ const navLinks = [
   { href: "/for-agencies",  label: "For Agencies", key: "agencies" },
   { href: "/customers",     label: "Customers",    key: "customers" },
   { href: "/calculator",    label: "ROI",          key: "roi" },
-  { href: "/trust",         label: "Trust",        key: "trust" },
   { href: "/about",         label: "About",        key: "about" },
 ];
 
