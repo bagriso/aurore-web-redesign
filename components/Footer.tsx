@@ -46,7 +46,6 @@ export default function Footer() {
             <ul>
               <li><Link href="/solutions">All 17 solutions</Link></li>
               <li><Link href="/approach">How we deploy</Link></li>
-              <li><Link href="/trust">Trust &amp; security</Link></li>
               <li><Link href="/calculator">ROI calculator</Link></li>
             </ul>
           </div>

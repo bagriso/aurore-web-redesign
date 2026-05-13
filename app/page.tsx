@@ -398,46 +398,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* § 06 — Trust */}
-      <section className="bg-paper-2 section">
-        <div className="container">
-          <div className="grid-2" style={{ gap: 48, alignItems: "start" }}>
-            <div>
-              <div className="section-mark"><span className="num">§ 06</span><span className="label">Trust</span></div>
-              <h2 className="display h-md" style={{ marginTop: 18, maxWidth: "18ch" }}>
-                Compliance is the first risk.{" "}
-                <em style={{ fontStyle: "italic", color: "var(--teal)" }}>We treat it that way.</em>
-              </h2>
-              <p className="body-lg" style={{ marginTop: 18 }}>
-                A CFPB action or a TCPA class doesn&apos;t get refinanced. Aurore enforces Reg F
-                time-of-day, mini-Miranda language, dispute-window timing, and cease-and-desist
-                propagation at the workflow boundary — and produces the evidence package an
-                auditor will accept on the first request.
-              </p>
-              <Link href="/trust" className="btn btn-secondary btn-sm" style={{ marginTop: 24 }}>See our trust posture →</Link>
-            </div>
-
-            <div className="card card-pad">
-              <p className="eyebrow accent">Posture · public</p>
-              <ul style={{ listStyle: "none", padding: 0, margin: "18px 0 0", display: "flex", flexDirection: "column", gap: 14 }}>
-                {[
-                  { label: "SOC 2 Type II", badge: "In progress · audit Q3 2026", cls: "pill-amber" },
-                  { label: "FCRA permissible use posture", badge: "Documented", cls: "pill-accent" },
-                  { label: "FDCPA · Reg F controls", badge: "Enforced at workflow boundary", cls: "pill-accent" },
-                  { label: "Hosting", badge: "US-only · encrypted at rest", cls: "" },
-                  { label: "BAA available under NDA", badge: "Yes", cls: "pill-accent" },
-                ].map((item, i, arr) => (
-                  <li key={item.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: i < arr.length - 1 ? "1px solid var(--line-soft)" : "none", paddingBottom: i < arr.length - 1 ? 12 : 0 }}>
-                    <span className="body">{item.label}</span>
-                    <span className={`pill ${item.cls}`}>{item.badge}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Closing CTA */}
       <section className="bg-ink section" style={{ position: "relative", overflow: "hidden" }}>
         <div className="bg-dots-ink" style={{ position: "absolute", inset: 0, opacity: 0.7 }} />
